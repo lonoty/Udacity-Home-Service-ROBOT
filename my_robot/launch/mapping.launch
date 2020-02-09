@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+
+
+
+    <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+
+
+      <param name="base_frame" type="string" value="robot_footprint"/>
+      <param name="maxRange" value="10"/>
+      
+      <param name="particles" value="100"/>
+      <param name="angularUpdate" value="4"/>
+      <param name="linearUpdate" value="4"/>
+
+    </node>
+
+</launch>
